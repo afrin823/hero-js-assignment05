@@ -231,7 +231,7 @@ class="bg-[#F7F8F8] h-full py-[40px] px-3 lg:px-0 lg:py-[120px] rounded-[44px] l
     </div>
     <div class="bg-white min-h-[200px] lg:p-8 rounded-[24px] lg:flex h-full gap-9">
         <div class="">
-            <h3 class="text-center lg:text-start raleway text-2xl font-semibold">Select Your Seat</h3>
+            <h3 class="text-center lg:text-start raleway text-3xl font-semibold">Select Your Seat</h3>
             <hr class="border-dashed border-t-[2px] border-[rgba(3,7,18,0.20)] my-6">
             <p class="text-[18px] font-medium flex justify-between">
                 <span class=" common-color flex items-center gap-2">
@@ -315,7 +315,7 @@ class="bg-[#F7F8F8] h-full py-[40px] px-3 lg:px-0 lg:py-[120px] rounded-[44px] l
 
         <div class="p-3">
             <div class="mt-5 lg:mt-0">
-                <h3 class="raleway text-2xl font-semibold text-center lg:text-start">Select Your Seat</h3>
+                <h3 class="raleway text-3xl font-semibold text-center lg:text-start ">Select Your Seat</h3>
                 <hr class="w-full border-dashed border-t-[2px] border-[rgba(3,7,18,0.20)] my-6">
             </div>
             <div class="lg:min-w-[433px] min-h-[335px] bg-[#F7F8F8] p-2 lg:mx-0 lg:p-8 rounded-xl">
@@ -328,11 +328,11 @@ class="bg-[#F7F8F8] h-full py-[40px] px-3 lg:px-0 lg:py-[120px] rounded-[44px] l
                         <!-- head -->
                         <thead>
                             <tr class="font-medium text-black border-b-[2px] border-dashed border-[rgba(3,7,18,0.20)]">
-                                <th class="space-x-1">Seat <span id="seat-booked"
+                                <th class="space-x-1 text-xl">Seat <span id="seat-booked"
                                  class="px-3 text-[12px] font-bold text-white bg-[#1DD100] rounded-lg">0</span>
                                 </th>
-                                <th>Class</th>
-                                <th>Price</th>
+                                <th class="text-xl">Class</th>
+                                <th class="text-xl">Price</th>
                             </tr>
                         </thead>
 
@@ -341,8 +341,8 @@ class="bg-[#F7F8F8] h-full py-[40px] px-3 lg:px-0 lg:py-[120px] rounded-[44px] l
                     </table>
                     <hr class="border-[1px] mt-2 border-[rgba(3,7,18,0.20)]">
                     <div class="font-semibold flex justify-between mt-4">
-                        <p class="">Total Price</p>
-                        <p class="">BDT <span id="total-price">0</span></p>
+                        <p class="text-xl">Total Price</p>
+                        <p class="text-xl">BDT <span id="total-price">0</span></p>
                     </div>
                     <div id="coupon-div"
                         class="bg-white h-[56px] rounded-xl flex items-center p-2 mt-4 mb-6">
@@ -352,12 +352,12 @@ class="bg-[#F7F8F8] h-full py-[40px] px-3 lg:px-0 lg:py-[120px] rounded-[44px] l
                             onclick="applyCoupon()" disabled>Apply</button>
                     </div>
                     <div id="discount-div" class="hidden font-semibold flex justify-between mt-4">
-                        <p class="">Discount TK</p>
-                        <p class="">BDT <span id="discount">0</span></p>
+                        <p class="text-xl">Discount TK</p>
+                        <p class="text-xl">BDT <span id="discount">0</span></p>
                     </div>
                     <div class="font-semibold flex justify-between mt-4">
-                        <p class="">Grand Total</p>
-                        <p class="">BDT <span id="grand-price">0</span></p>
+                        <p class="text-xl">Grand Total</p>
+                        <p class="text-xl">BDT <span id="grand-price">0</span></p>
                     </div>
 
                 </div>
@@ -368,21 +368,21 @@ class="bg-[#F7F8F8] h-full py-[40px] px-3 lg:px-0 lg:py-[120px] rounded-[44px] l
             <div id="submit-section" class="grid grid-cols-1 mt-6 gap-6">
 
                 <div class="">
-                    <p class="font-semibold">Passenger Name*</p>
+                    <p class="font-semibold text-2xl">Passenger Name*</p>
                     <input id="passenger-name"
                         class="w-full min-h-[64px] pl-6 rounded-xl  border-[1px] border-[rgba(3,7,18,0.10)] mt-4"
                         type="text" placeholder="Enter your name">
                 </div>
 
                 <div class="">
-                    <p class="font-semibold">Phone Number*</p>
+                    <p class="font-semibold text-2xl">Phone Number*</p>
                     <input id="phone-number"
                         class="w-full min-h-[64px] pl-6 rounded-xl border-[1px] border-[rgba(3,7,18,0.10)] mt-4"
                         type="text" placeholder="Enter your phone number">
                 </div>
 
                 <div class="">
-                    <p  class="font-semibold">Email ID</p>
+                    <p  class="font-semibold text-2xl">Email ID</p>
                     <input id="email-id"
                         class="w-full min-h-[64px] pl-6 rounded-xl  border-[1px] border-[rgba(3,7,18,0.10)] mt-4"
                         type="email" placeholder="Enter your email id">
