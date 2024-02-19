@@ -15,10 +15,10 @@ function buyTicketButton() {
     getElementById('ph-paribahan').scrollIntoView({ behavior: 'smooth' });
 }
 
-const seats = document.getElementsByClassName('seats');
-let seatBooked = parseInt(getElementInnerTextById('seat-booked'));
+const sit = document.getElementsByClassName('sit');
+let seatBooked = parseInt(getElementInnerTextById('sit-booked'));
 let seatAlreadyBooked=0;
-for (const seat of seats) {
+for (const seat of sit) {
     seat.addEventListener('click', function () {
         if (seatBooked !== 4) {
             seat.style.backgroundColor = '#1DD100';
@@ -26,7 +26,7 @@ for (const seat of seats) {
             seatBooked++;
             seatAlreadyBooked++;
 
-            document.getElementById('seat-booked').innerText = parseInt(getElementInnerTextById('seat-booked')) + 1;
+            document.getElementById('sit-booked').innerText = parseInt(getElementInnerTextById('sit-booked')) + 1;
             const seatNumber = seat.innerText;
             BookedSeatDetails(seatNumber);
             totalPrice();
